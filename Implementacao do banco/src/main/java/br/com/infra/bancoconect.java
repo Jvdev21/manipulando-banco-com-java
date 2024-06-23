@@ -1,6 +1,28 @@
 package br.com.infra;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
-import java.sql.*;
+public class bancoconect{
+    private static final String URL_DB = "jdbc:postgresql://localhost:5433/QFK";
+    private static final String USER = "postgres";
+    private static final String PASS = "0808";
+
+    public static Connection connection;
+
+    public static Connection getConnection() throws SQLException {
+        if(connection==null || connection.isClosed()) {
+            connection = DriverManager.getConnection(URL_DB, USER, PASS);
+        }
+        return connection;
+    }
+}
+
+
+
+
+
+/*
 
 public class bancoconect {
     // Método principal que é o ponto de entrada do programa
@@ -21,7 +43,5 @@ public class bancoconect {
             throw new RuntimeException(e);
         }
     }
-
-
-
 }
+*/

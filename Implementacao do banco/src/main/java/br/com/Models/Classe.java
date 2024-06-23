@@ -5,7 +5,9 @@ public class Classe {
    private  int cod_classe;
    private  String Dificuldade;
 
-    public Classe(int codClasse, String dificuldade) {
+    public Classe(int cod_classe, String dificuldade) {
+        this.cod_classe = cod_classe;
+        Dificuldade = dificuldade;
     }
 
     public int getCod_classe() {

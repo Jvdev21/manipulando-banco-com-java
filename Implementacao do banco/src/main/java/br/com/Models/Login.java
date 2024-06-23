@@ -3,18 +3,27 @@ package br.com.Models;
 import java.util.Date;
 
 public class Login extends Classe {
+    private String idlogin;
     private String email;
     private  String senha;
     private  String nome;
     private Date data_nasc;
 
-    public Login(int codClasse, String dificuldade,String email,String senha, String nome,Date data_nasc) {
+    public Login(int codClasse, String dificuldade, String idlogin, String email, String senha, String nome, Date data_nasc) {
         super(codClasse, dificuldade);
-        this.data_nasc = data_nasc;
+        this.idlogin = idlogin;
         this.email = email;
+        this.senha = senha;
         this.nome = nome;
-        this.senha =senha;
+        this.data_nasc = data_nasc;
+    }
 
+    public String getIdlogin() {
+        return idlogin;
+    }
+
+    public void setIdlogin(String idlogin) {
+        this.idlogin = idlogin;
     }
 
     public String getEmail() {
