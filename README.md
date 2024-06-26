@@ -3,13 +3,14 @@ INSERÇÃO DE DRIVE DO DB, NO MAVEN:
 - pom
 
 
-
 CLASSES e suas Entidades (get and setters):
+
 ![img.png](img.png) 
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
 
 EXEPTIONS:
+
 ![img_3.png](img_3.png) 
 - criação do banco
 
@@ -17,7 +18,9 @@ EXEPTIONS:
 - configuração de busca e retorno, 
 para funcionamento correto do banco.
 
+
 SERVICES:
+
 ![img_5.png](img_5.png) 
 - inserir dados no db.(INSERT INTO)
   
