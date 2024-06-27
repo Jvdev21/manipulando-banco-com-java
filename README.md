@@ -1,3 +1,6 @@
+NOME DO PROJETO: QFK DB.
+
+
 INSERÇÃO DE DRIVE DO DB, NO MAVEN:
 ![img_10.png](img_10.png)
 - pom
@@ -35,4 +38,6 @@ SERVICES:
   
 ![img_9.png](img_9.png)
 - conexão com o db.(POSTGRES)
+
+
 
